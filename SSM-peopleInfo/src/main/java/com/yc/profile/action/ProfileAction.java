@@ -45,7 +45,7 @@ public class ProfileAction implements ModelDriven<Profile>,SessionAware{
 		session.put("profile", p);
 		return "update";
 	}
-	
+	//修改信息哈哈
 	public String update(){
 		int result=profileService.updateProfile(profile);
 		Profile p=profileService.findProfileById(profile.getId());
